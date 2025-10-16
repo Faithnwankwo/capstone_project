@@ -9,6 +9,11 @@ from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / "subdir".
 BASE_DIR = Path(__file__).resolve().parent.parent
+# --------------------------------------------------------------
+# Host and CSRF settings for Render deployment
+# --------------------------------------------------------------
+ALLOWED_HOSTS = ["capstone-project-1-lwif.onrender.com", "localhost", "127.0.0.1"]
+CSRF_TRUSTED_ORIGINS = ["https://capstone-project-1-lwif.onrender.com"]
 
 # ------------------------------------------------------------------------------
 # Core safety + environment flags (Render will set these as Environment Variables)
